@@ -1,0 +1,118 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.skills {
+    @include flex;
+    height: 100vh;
+
+    &__left {
+        flex: 1.5;
+        @include flex;
+        justify-content: center;
+
+        .block {
+            max-width: 700px;
+            @include column;
+            gap: 5rem;
+
+            .item {
+                @include flex;
+    
+                &>:nth-child(1) {
+                    font-size: 2rem;
+                    width: 210px;
+                    text-align: end;
+                    margin-right: 30px;
+                }
+
+                &__right {    
+                    font-size: 1.2rem;
+
+                    .name {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        flex: 1;
+        position: relative;
+
+        .main__circle {
+            left: 9rem;
+            position: relative;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 100%;
+            box-shadow: $smboxShadow;
+            top: 2rem;
+            background-color: #ffffff;
+
+            &>*{
+                position: absolute;
+            }
+
+            &>:nth-child(1) {
+                top: -3rem;
+                left: 6.5rem;
+            }
+
+            &>:nth-child(2) {
+                top: 6.5rem;
+                left: -3rem;
+            }
+
+            &>:nth-child(3) {
+                top: 6.5rem;
+                left: 6.5rem;
+            }
+
+            &>:nth-child(4) {
+                top: 6.5rem;
+                left: 17rem;
+            }
+
+            &>:nth-child(5) {
+                top: 16rem;
+                left: 6.5rem;
+            }
+
+            .second__circle {
+                background-color: #ffffff;
+                @include flex;
+                width: 7rem;
+                height: 7rem;
+                position: absolute;
+                border-radius: 100%;
+                border: 5px solid #ebebeb;
+                justify-content: center;
+
+                &>img {
+                    transform: scale(0.7);
+                }
+            }
+        }
+
+        .back__circle {
+            position: absolute;
+            height: 13rem;
+            width: 13rem;
+            border-radius: 100%;
+            z-index: -1;
+        }
+
+        .yellow {
+            background-color: rgb(103, 28, 172);
+            left: 19rem;
+            top: 10rem;
+        }
+
+        .green {
+            background-color: $black;
+            left: 19rem;
+            top: 0rem;
+        }
+    }
+}

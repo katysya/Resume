@@ -1,0 +1,39 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+    @include flex;
+    position: relative;
+
+    &>img {
+        width: 100%;
+    }
+
+    .cat {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        right: 10rem;
+        bottom: -7rem;
+    }
+
+    &__content{
+        position: absolute;
+        @include flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8rem;
+        gap: 1rem;
+        color: $white;
+
+        span {
+            font-size: 2rem;
+        }
+
+        .icons {
+            @include flex;
+            gap: 2rem;
+        }
+    }
+}

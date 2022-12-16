@@ -1,0 +1,10 @@
+@import './styles/constants.scss';
+
+.App {
+    overflow: hidden;
+    color: $black;
+    margin: 0;
+    font-family: $font-main;
+
+    transition: all 0.9s linear;
+}

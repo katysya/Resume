@@ -1,0 +1,72 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.contact {
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: center;
+
+    &__content {
+        @include column;
+        position: relative;
+        padding: 2rem;
+        height: auto;
+        height: 530px;
+        background-color: $white;
+        box-shadow: $smboxShadow;
+        border-radius: 20px;
+        position: relative;
+
+        &>:nth-child(1) {
+            color: $black;
+        }
+
+        .blur {
+            position: absolute;
+            top: 1rem;
+            left: 8rem;
+        }
+
+        &>form {
+            @include column;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            z-index: 10;
+            align-items: center;
+
+            input {
+                color: $black;
+            }
+
+            .user {
+                width: 20rem;
+                height: 3rem;
+                padding: 0.3rem;
+                outline: none;
+                border: 1px solid $purple;
+                background-color: $white;
+                border-radius: 8px;
+                font-size: 16px;
+            }
+
+            textarea {
+                height: 8rem!important;
+                color: $black;
+            }
+
+            .button {
+                background-color: $purple;
+                padding: 15px 20px;
+                color: $white;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+}
+

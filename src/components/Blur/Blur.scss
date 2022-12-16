@@ -1,0 +1,11 @@
+@import '../../styles/constants.scss';
+
+.blur {
+    position: absolute;
+    width: 18rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $purple-light;
+    z-index: -9;
+    filter: blur(72px);
+}
