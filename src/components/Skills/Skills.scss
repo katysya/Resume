@@ -6,7 +6,7 @@
     height: 100vh;
 
     &__left {
-        flex: 1.5;
+        flex: 1;
         @include flex;
         justify-content: center;
 
@@ -14,18 +14,19 @@
             max-width: 700px;
             @include column;
             gap: 5rem;
+            padding-left: 30px;
 
             .item {
                 @include flex;
-    
+
                 &>:nth-child(1) {
                     font-size: 2rem;
-                    width: 210px;
+                    min-width: 210px;
                     text-align: end;
                     margin-right: 30px;
                 }
 
-                &__right {    
+                &__right {
                     font-size: 1.2rem;
 
                     .name {
@@ -50,7 +51,7 @@
             top: 2rem;
             background-color: #ffffff;
 
-            &>*{
+            &>* {
                 position: absolute;
             }
 
@@ -114,5 +115,34 @@
             left: 19rem;
             top: 0rem;
         }
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .skills {
+
+        &__right {
+
+            .main__circle {
+                left: 5rem;
+            }
+
+            .yellow {
+                left: 15rem;
+            }
+
+            .green {
+                left: 15rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .skills {
+
+        flex-direction: column;
     }
 }

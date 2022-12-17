@@ -17,7 +17,7 @@
         bottom: -7rem;
     }
 
-    &__content{
+    &__content {
         position: absolute;
         @include flex;
         justify-content: center;
@@ -34,6 +34,15 @@
         .icons {
             @include flex;
             gap: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .footer {
+        .cat {
+            right: 1rem;
         }
     }
 }

@@ -5,6 +5,8 @@ import Blur from '../Blur/Blur';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
 import { motion } from 'framer-motion';
+import Button from '../Button/Button';
+import Message from '@iconscout/react-unicons/icons/uil-fast-mail';
 
 const Contact = () => {
 
@@ -38,24 +40,29 @@ const Contact = () => {
   };
 
 
-  const transition = { duration: 10, type: 'spring' }
+  const transition = { duration: 3, type: 'spring' }
 
   return (
-    <div className='contact'>
+    <div className='contact' id='Contact'>
       <motion.div className="contact__content"
-        initial={{ right: '10rem' }}
+        initial={{ right: '8rem' }}
         whileInView={{ right: '0rem' }}
         transition={transition}>
-        <Title text='Для связи' />
-        <Blur />
-        <form ref={form} onSubmit={sendEmail}>
-          <input type='text' value={name} onChange={event => setName(event.target.value)} name='user_name' className='user' placeholder='Введите имя' required />
-          <input type='email' value={email} onChange={event => setEmail(event.target.value)} name='user_email' className='user' placeholder='Введите email' required />
-          <textarea name='message' value={message} onChange={event => setMessage(event.target.value)} className='user' placeholder='Введите текст' required />
-          <input type='submit' value="Отправить" className='button' required />
-          <span>{done && "Сообщение отправлено!"}</span>
-        </form>
-        <div className='blur'><Blur />
+        <div className='contact__left'>
+          <Button text={"Резюме"} />
+        </div>
+        <div className='contact__right'>
+          <div>
+            <Title text='Для связи' />
+            <Message size={34} />
+          </div>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type='text' value={name} onChange={event => setName(event.target.value)} name='user_name' className='user' placeholder='Введите имя' required />
+            <input type='email' value={email} onChange={event => setEmail(event.target.value)} name='user_email' className='user' placeholder='Введите email' required />
+            <textarea name='message' value={message} onChange={event => setMessage(event.target.value)} className='user' placeholder='Введите текст' required />
+            <input type='submit' value="Отправить" className='button' required />
+            <span>{done && "Сообщение отправлено!"}</span>
+          </form>
         </div>
       </motion.div>
     </div>

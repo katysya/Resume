@@ -19,6 +19,7 @@
     }
 
     &__right {
+
         flex: 1;
 
         &>:nth-child(2) {
@@ -53,17 +54,36 @@
 
             .info__column {
                 flex: 1;
-               @include column;
-               gap: 8px;
+                @include column;
+                gap: 8px;
 
-               p {
+                p {
 
-                span {
-                    font-weight: bold;
-                    font-size: 1.2rem;
+                    span {
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
                 }
-               }
             }
         }
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .aboutme {
+
+        &__right {
+            flex: 1.5;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .aboutme {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 80px;
     }
 }

@@ -12,7 +12,7 @@
         gap: 2rem;
 
         .me {
-    
+
             &>:nth-child(3) {
                 font-weight: 100;
                 font-size: 32px;
@@ -25,6 +25,7 @@
                 opacity: 0.8;
             }
         }
+
         .link {
             margin-top: 10rem;
         }
@@ -32,11 +33,19 @@
 
     &__right {
         flex: 1;
+        height: 400px;
         position: relative;
 
-        &>*{
+        &>* {
             position: absolute;
             z-index: 1;
+        }
+
+        .photo {
+            top: -100px;
+            width: 400px;
+            right: 200px;
+            height: 550px;
         }
 
         .blur {
@@ -48,6 +57,19 @@
             width: 200px;
             right: 5rem;
             transform: rotate(-90deg);
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .intro {
+
+        &__right {
+
+            .photo {
+                right: 60px;
+            }
         }
     }
 }

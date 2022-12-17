@@ -2,10 +2,11 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Skills from './components/Skills/Skills';
+import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AboutMe from './components/AboutMe/AboutMe';
-import {themeContext} from './Context';
+import { themeContext } from './Context';
 import { useContext } from 'react';
 
 function App() {
@@ -14,16 +15,17 @@ function App() {
 
   return (
     <div className="App"
-    style={{
-      background: darkMode? 'black' : '',
-      color: darkMode? '#ffffffcf': ''
-    }}>
-      <Header/>
-      <Intro/>
-      <AboutMe/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      style={{
+        background: darkMode ? 'black' : '',
+        color: darkMode ? '#ffffffcf' : ''
+      }}>
+      <Header />
+      <Intro />
+      <AboutMe />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }
