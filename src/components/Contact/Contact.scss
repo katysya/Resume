@@ -21,7 +21,7 @@
         @include column;
         justify-content: end;
         width: 100%;
-        height: 100%;
+        height: 108%;
         background-image: url("../../img/Contact/me.jpg");
         background-size: cover;
         padding: 50px 50px;
@@ -30,7 +30,7 @@
     &__right {
         @include column;
         width: 100%;
-        height: 100%;
+        height: 108%;
         padding: 30px 40px;
         background-color: $white;
         box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.05);
