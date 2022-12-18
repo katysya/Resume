@@ -18,27 +18,27 @@ const Header = () => {
       <div className="header__right">
         <ul className={open ? "list active" : "list"}>
           <li>
-            <Link sry={'true'} to='Header' smooth={true} activeClass="activeClass">
+            <Link sry={'true'} to='Header' onClick={() => setOpen(!open)} smooth={true} activeClass="activeClass">
               Главная
             </Link>
           </li>
           <li>
-            <Link sry={'true'} to='Aboutme' smooth={true}>
+            <Link sry={'true'} to='Aboutme' onClick={() => setOpen(!open)} smooth={true}>
               О себе
             </Link>
           </li>
           <li>
-            <Link sry={'true'} to='Skills' smooth={true}>
+            <Link sry={'true'} to='Skills' onClick={() => setOpen(!open)} smooth={true}>
               Образование
             </Link>
           </li>
           <li>
-            <Link sry={'true'} to='Portfolio' smooth={true}>
+            <Link sry={'true'} to='Portfolio' onClick={() => setOpen(!open)} smooth={true}>
               Портфолио
             </Link>
           </li>
           <li>
-            <Link sry={'true'} to='Contact' smooth={true}>
+            <Link sry={'true'} to='Contact' onClick={() => setOpen(!open)} smooth={true}>
               Контакты
             </Link>
           </li>

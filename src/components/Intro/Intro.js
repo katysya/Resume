@@ -18,8 +18,8 @@ const Intro = () => {
       <div className="intro__left">
         <div className='me'>
           <Title text={'Привет! Меня зовут'} />
-          <Subtitle text={'Катя'} />
-          <p> И я Frontend-разработчик</p>
+          <Subtitle text={'Катя и я'} />
+          <p>Frontend-разработчик</p>
         </div>
         <Button text={"Скачать резюме"} download={true} />
         <div className='link'>
@@ -27,15 +27,14 @@ const Intro = () => {
         </div>
       </div>
       <div className="intro__right">
-        {/* Импорт и работа с правой частью 33.32-38.14*/}
         <img className='photo' src={Me} alt="" />
         <div className='blur'>
           <Blur />
         </div>
         <motion.img
-          initial={{ top: '200px', right: '-5rem' }}
-          whileInView={{ top: '200px', right: '0rem' }}
-          whileHover={{ top: '200px', right: '-4rem' }}
+          initial={{ right: '-5rem' }}
+          whileInView={{ right: '0rem' }}
+          whileHover={{ right: '-4rem' }}
           transition={transition}
           className="cat" src={Cat} alt=""></motion.img>
       </div>

@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <img src={Wave} alt='' />
+      <img className='footer__image' src={Wave} alt='' />
       <div className="footer__content">
         <span>Буду рада сотрудничеству!</span>
         <div className='icons'>
@@ -21,7 +21,7 @@ const Footer = () => {
       <motion.img className="cat"
         initial={{ bottom: '-10rem' }}
         whileInView={{ bottom: '-4rem' }}
-        whileHover={{ bottom: '-9rem' }}
+        whileHover={{ bottom: '-7rem' }}
         transition={transition}
         src={Cat} alt='' />
     </div>

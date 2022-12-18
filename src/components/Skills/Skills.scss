@@ -28,6 +28,7 @@
 
                 &__right {
                     font-size: 1.2rem;
+                    padding-right: 10px;
 
                     .name {
                         font-weight: bold;
@@ -144,5 +145,131 @@
     .skills {
 
         flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .skills {
+
+        &__left {
+            margin-bottom: 70px;
+
+            .block {
+                padding-left: 10px;
+            }
+        }
+
+        &__right {
+            width: 100%;
+
+            .main__circle {
+                left: 20%;
+            }
+
+            .yellow {
+                left: 40%;
+            }
+
+            .green {
+                left: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .skills {
+
+        &__left {
+
+            .block {
+
+                .item {
+
+                    &>:nth-child(1) {
+                        font-size: 20px;
+                        min-width: 130px;
+                    }
+                }
+            }
+        }
+
+        &__right {
+
+            .main__circle {
+                width: 250px;
+                height: 250px;
+                left: 15%;
+
+                &>:nth-child(1) {
+                    top: -2rem;
+                    left: 5rem;
+                }
+
+                &>:nth-child(2) {
+                    top: 5rem;
+                    left: -3rem;
+                }
+
+                &>:nth-child(3) {
+                    top: 5rem;
+                    left: 5rem;
+                }
+
+                &>:nth-child(4) {
+                    top: 5rem;
+                    left: 13rem;
+                }
+
+                &>:nth-child(5) {
+                    top: 12rem;
+                    left: 5rem;
+                }
+
+                .second__circle {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+
+            .back__circle {
+                height: 150px;
+                width: 150px;
+            }
+
+            .yellow {
+                left: 40%;
+                top: 8rem;
+            }
+
+            .green {
+                left: 40%;
+                top: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .skills {
+
+
+        &__right {
+
+            .back__circle {
+                height: 150px;
+                width: 150px;
+            }
+
+            .yellow {
+                left: 45%;
+                top: 8rem;
+            }
+
+            .green {
+                left: 45%;
+                top: 2rem;
+            }
+        }
     }
 }
