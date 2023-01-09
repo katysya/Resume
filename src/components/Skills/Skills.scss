@@ -62,7 +62,7 @@
             }
 
             &>:nth-child(2) {
-                top: 6.5rem;
+                top: 3.5rem;
                 left: -3rem;
             }
 
@@ -72,13 +72,18 @@
             }
 
             &>:nth-child(4) {
-                top: 6.5rem;
+                top: 3.5rem;
                 left: 17rem;
             }
 
             &>:nth-child(5) {
-                top: 16rem;
-                left: 6.5rem;
+                top: 15rem;
+                left: 0.5rem;
+            }
+
+            &>:nth-child(6) {
+                top: 15rem;
+                left: 13.5rem;
             }
 
             .second__circle {

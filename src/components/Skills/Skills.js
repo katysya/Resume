@@ -7,6 +7,7 @@ import JS from "../../img/Js.png";
 import HTML from "../../img/Html.png";
 import SASS from "../../img/Sass.png";
 import GIT from "../../img/Git.png";
+import TS from '../../img/TS.png';
 import {motion} from 'framer-motion';
 
 const Skills = () => {
@@ -31,7 +32,7 @@ const Skills = () => {
         <div className="item">
         <Subtitle text={"Навыки: "}/>
           <div className="item__right">
-          <p className='name'>React, JavaScript, Html, Sass, Git</p>
+          <p className='name'>React, TypeScript, JavaScript, Html, Sass, Git</p>
           </div>
         </div>
         </div>
@@ -44,19 +45,22 @@ const Skills = () => {
         transition={{duration: 3.5, type: 'spring'}}
         className='main__circle'>
           <div className='second__circle'>
-            <img src={JS} alt=""/>
+            <img src={JS} alt="skills"/>
           </div>
           <div className='second__circle'>
-            <img src={SASS} alt=""/>
+            <img src={SASS} alt="skills"/>
           </div>
           <div className='second__circle'>
-            <img src={ReactI} alt=""/>
+            <img src={ReactI} alt="skills"/>
           </div>
           <div className='second__circle'>
-            <img src={HTML} alt=""/>
+            <img src={HTML} alt="skills"/>
           </div>
           <div className='second__circle'>
-            <img src={GIT} alt=""/>
+            <img src={GIT} alt="skills"/>
+          </div>
+          <div className='second__circle'>
+            <img src={TS} alt="skills"/>
           </div>
         </motion.div>
         <div className='back__circle yellow'></div>
