@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.7b207374.css",
-    "main.js": "/Resume/static/js/main.d9c8cef1.js",
-    "static/media/project4.png": "/Resume/static/media/project4.461a44f1bad8898a43ec.png",
-    "static/media/project5.png": "/Resume/static/media/project5.bc8a0e5617ef56c08cf9.png",
+    "main.css": "/Resume/static/css/main.bf4195b5.css",
+    "main.js": "/Resume/static/js/main.02efdec1.js",
+    "static/media/project5.png": "/Resume/static/media/project5.461a44f1bad8898a43ec.png",
     "static/media/me.png": "/Resume/static/media/me.8bff49898dda62a05f54.png",
     "static/media/project3.png": "/Resume/static/media/project3.0214978042da4cabefb6.png",
     "static/media/project1.png": "/Resume/static/media/project1.8184014c36d6b95f95f6.png",
     "static/media/cat4.png": "/Resume/static/media/cat4.3d3fe4348db1ce019857.png",
-    "static/media/resume.pdf": "/Resume/static/media/resume.4e7da0bd59c716b55928.pdf",
     "static/media/cat2.png": "/Resume/static/media/cat2.7e1e79610238f8fba487.png",
+    "static/media/project6.png": "/Resume/static/media/project6.034294541e7972468cd7.png",
+    "static/media/resume.pdf": "/Resume/static/media/resume.5407116610c31ca00745.pdf",
+    "static/media/TS.png": "/Resume/static/media/TS.c67b99b8ca4456fa4f48.png",
     "static/media/1.jpg": "/Resume/static/media/1.c1ebdd464e78da9825c6.jpg",
     "static/media/project2.png": "/Resume/static/media/project2.955b68af4ae15a0e2f4f.png",
     "static/media/React.png": "/Resume/static/media/React.9cf25c9a06aeb46e5851.png",
@@ -19,11 +20,11 @@
     "static/media/Git.png": "/Resume/static/media/Git.f1012544e102df9e7f00.png",
     "static/media/Html.png": "/Resume/static/media/Html.b88df3830af723776e39.png",
     "index.html": "/Resume/index.html",
-    "main.7b207374.css.map": "/Resume/static/css/main.7b207374.css.map",
-    "main.d9c8cef1.js.map": "/Resume/static/js/main.d9c8cef1.js.map"
+    "main.bf4195b5.css.map": "/Resume/static/css/main.bf4195b5.css.map",
+    "main.02efdec1.js.map": "/Resume/static/js/main.02efdec1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b207374.css",
-    "static/js/main.d9c8cef1.js"
+    "static/css/main.bf4195b5.css",
+    "static/js/main.02efdec1.js"
   ]
 }
